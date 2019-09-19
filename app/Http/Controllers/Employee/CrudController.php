@@ -182,7 +182,7 @@ class CrudController extends Controller
 
        $id = $user->id;
        $results = Employee::where('parent_id', '=',$id )->first();
-       //$user->delete();
+       $user->delete();
 
         if ($results > null )
         {
